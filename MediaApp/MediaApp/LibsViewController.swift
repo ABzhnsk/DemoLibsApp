@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LibsViewController.swift
 //  MediaApp
 //
 //  Created by Anna Buzhinskaya on 11.01.2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LibsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
