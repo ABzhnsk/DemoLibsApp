@@ -11,9 +11,29 @@ class LibsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        libsName.count
+    }
 
-}
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        var config = cell.defaultContentConfiguration()
+        config.text = libsName[indexPath.row]
+        cell.contentConfiguration = config
+        cell.selectionStyle = .none
+        return cell
+    }
+
+    private let libsName = [
+        "Cabbage - video",
+        "NYTPhotoViewer - photo",
+        "Lightbox - photo",
+        "Lightbox - video",
+        "ImageViewer - photo",
+        "ImageViewer - video",
+    ]
+
+} // class LibsViewController
 
