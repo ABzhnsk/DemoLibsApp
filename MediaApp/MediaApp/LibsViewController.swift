@@ -26,8 +26,13 @@ class LibsViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(PlayerDetailsViewController(), animated: true)
+    }
+
     private let libsName = [
         "Cabbage - video",
+        "Player - video",
         "NYTPhotoViewer - photo",
         "Lightbox - photo",
         "Lightbox - video",
