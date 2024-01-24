@@ -33,20 +33,24 @@ PODS:
   - SwifterSwift/SwiftStdlib (6.0.0)
   - SwifterSwift/UIKit (6.0.0)
   - SwifterSwift/WebKit (6.0.0)
+  - VFCabbage (0.5.1)
 
 DEPENDENCIES:
   - Player
   - SwifterSwift
+  - VFCabbage
 
 SPEC REPOS:
   trunk:
     - Player
     - SwifterSwift
+    - VFCabbage
 
 SPEC CHECKSUMS:
   Player: 37e0acc16ea1495fc241df88fe9f089367513331
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
+  VFCabbage: eb7c401e002e66a9f641590f274d9d5a6bfa85e2
 
-PODFILE CHECKSUM: 3d1f1f6890e518cedbb6e4904073b0a0a94e94a8
+PODFILE CHECKSUM: ba74ea6c0d8c04e575b319e436baf8f4856ada4a
 
 COCOAPODS: 1.14.2

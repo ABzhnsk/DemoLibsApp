@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD6034C75C788176B37F7634 /* Pods_MediaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE4091E087B9063535A3DEC /* Pods_MediaApp.framework */; };
 		B19890942B59577900C1F93F /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */; };
+		B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890952B5EB43500C1F93F /* CabbageViewController.swift */; };
 		B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350B2B502870009E80A3 /* AppDelegate.swift */; };
 		B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350D2B502870009E80A3 /* SceneDelegate.swift */; };
 		B1F135102B502870009E80A3 /* LibsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350F2B502870009E80A3 /* LibsViewController.swift */; };
@@ -20,6 +21,7 @@
 		8AE4091E087B9063535A3DEC /* Pods_MediaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E553F92B1518216BB4F6E6 /* Pods-MediaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaApp.debug.xcconfig"; path = "Target Support Files/Pods-MediaApp/Pods-MediaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		B19890952B5EB43500C1F93F /* CabbageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabbageViewController.swift; sourceTree = "<group>"; };
 		B1F135082B502870009E80A3 /* MediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1350B2B502870009E80A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F1350D2B502870009E80A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				B1F1350B2B502870009E80A3 /* AppDelegate.swift */,
 				B1F1350D2B502870009E80A3 /* SceneDelegate.swift */,
+				B19890952B5EB43500C1F93F /* CabbageViewController.swift */,
 				B1F1350F2B502870009E80A3 /* LibsViewController.swift */,
 				B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */,
 				B1F135142B502872009E80A3 /* Assets.xcassets */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F135102B502870009E80A3 /* LibsViewController.swift in Sources */,
+				B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */,
 				B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */,
 				B19890942B59577900C1F93F /* PlayerDetailsViewController.swift in Sources */,
 				B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */,

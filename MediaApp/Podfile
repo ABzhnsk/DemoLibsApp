@@ -8,5 +8,5 @@ target 'MediaApp' do
   # Pods for MediaApp
   pod 'Player'
   pod 'SwifterSwift'
-
+  pod 'VFCabbage' 
 end
