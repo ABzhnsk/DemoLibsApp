@@ -77,7 +77,7 @@ final class CabbageViewController: UITableViewController {
     }
 
     private let avPlayerViewController = AVPlayerViewController()
-    private lazy var cell = ImageViewCell()
+    private lazy var cell = ImageCell()
 } // class CabbageViewController
 
 

@@ -1,5 +1,31 @@
 PODS:
+  - NYTPhotoViewer (5.0.8):
+    - NYTPhotoViewer/AnimatedGifSupport (= 5.0.8)
+    - NYTPhotoViewer/Core (= 5.0.8)
+  - NYTPhotoViewer/AnimatedGifSupport (5.0.8):
+    - NYTPhotoViewer/Core
+    - PINRemoteImage/iOS
+    - PINRemoteImage/PINCache
+  - NYTPhotoViewer/Core (5.0.8)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.2)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
   - Player (0.14.0)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
   - SwifterSwift (6.0.0):
     - SwifterSwift/AppKit (= 6.0.0)
     - SwifterSwift/Combine (= 6.0.0)
@@ -36,21 +62,33 @@ PODS:
   - VFCabbage (0.5.1)
 
 DEPENDENCIES:
+  - NYTPhotoViewer
   - Player
+  - SDWebImage
   - SwifterSwift
   - VFCabbage
 
 SPEC REPOS:
   trunk:
+    - NYTPhotoViewer
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - Player
+    - SDWebImage
     - SwifterSwift
     - VFCabbage
 
 SPEC CHECKSUMS:
+  NYTPhotoViewer: 86a8fb34f82e468fd0d49c8de71cbe1fb45de2ae
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   Player: 37e0acc16ea1495fc241df88fe9f089367513331
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   VFCabbage: eb7c401e002e66a9f641590f274d9d5a6bfa85e2
 
-PODFILE CHECKSUM: ba74ea6c0d8c04e575b319e436baf8f4856ada4a
+PODFILE CHECKSUM: ba89e14f418699d09d0f3f213490a68d50b1425e
 
 COCOAPODS: 1.14.2

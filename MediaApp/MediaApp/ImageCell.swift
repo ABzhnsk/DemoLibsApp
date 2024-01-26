@@ -1,5 +1,5 @@
 //
-//  ImageViewCell.swift
+//  ImageCell.swift
 //  MediaApp
 //
 //  Created by Anna Buzhinskaya on 26.01.2024.
@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class ImageViewCell: UITableViewCell {
+final class ImageCell: UITableViewCell {
     var image: UIImage? { didSet {
         screensaverImageView.image = nil
         if let image {
@@ -32,4 +32,4 @@ final class ImageViewCell: UITableViewCell {
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     private lazy var screensaverImageView = UIImageView()
-} // class ImageViewCell
+} // class ImageCell

@@ -6,7 +6,9 @@ target 'MediaApp' do
   use_frameworks!
 
   # Pods for MediaApp
+  pod 'NYTPhotoViewer'
   pod 'Player'
+  pod 'SDWebImage'
   pod 'SwifterSwift'
   pod 'VFCabbage' 
 end
