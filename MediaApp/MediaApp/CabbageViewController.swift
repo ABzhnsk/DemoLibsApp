@@ -12,7 +12,107 @@ import SwifterSwift
 import VFCabbage
 
 
-final class CabbageViewController: UIViewController {
+final class CabbageViewController: UITableViewController {
+
+    var videoURL = URL(string: "https://v3.cdnpk.net/videvo_files/video/free/2019-11/large_preview/190301_1_25_11.mp4")!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.backgroundColor = .systemBackground
+        tableView.separatorStyle = .none
+
+        // 1. Create a resource
+        let asset = AVAsset(url: videoURL) // FIXME: spends traffic every time the controller is loaded
+        let resource = AVAssetTrackResource(asset: asset)
+
+        // 2. Create a TrackItem instance, TrackItem can configure video&audio configuration
+        let trackItem = TrackItem(resource: resource)
+        // Set the video scale mode on canvas
+        trackItem.videoConfiguration.contentMode = .aspectFill
+
+        // 3. Add TrackItem to timeline
+        let timeline = Timeline()
+        timeline.videoChannel = [trackItem]
+        timeline.audioChannel = [trackItem]
+
+        // 4. Use CompositionGenerator to create AVPlayerItem
+        let compositionGenerator = CompositionGenerator(timeline: timeline)
+        // Set the video canvas's size
+        compositionGenerator.timeline.renderSize = CGSize(width: 1920, height: 1080)
+
+        // 5. Create AVPlayerItem
+        let playerItem = compositionGenerator.buildPlayerItem()
+
+        // 6. Create AVAssetImageGenerator
+        let imageGenerator = compositionGenerator.buildImageGenerator()
+        imageGenerator.appliesPreferredTrackTransform = true
+
+        // 7. Setup image to imageView in cell
+        imageGenerator.generateCGImagesAsynchronously(forTimes: [NSValue.init(time: .zero)]) {
+            [weak self] (_, cgImage, _, _, _) in
+            if let cgImage {
+                DispatchQueue.main.async {
+                    self?.cell.image = UIImage(cgImage: cgImage)
+                }
+            } else {
+                print("load thumb image failed") // TODO: add error handling
+            }
+        }
+
+        // 8. Add player to avPlayerViewController
+        avPlayerViewController.player = AVPlayer(playerItem: playerItem)
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.present(avPlayerViewController, animated: true)
+    }
+
+    private let avPlayerViewController = AVPlayerViewController()
+    private lazy var cell = Cell()
+} // class CabbageViewController
+
+
+private extension CabbageViewController {
+
+    final class Cell: UITableViewCell {
+
+        var image: UIImage? { didSet {
+            screensaverImageView.image = nil
+            if let image {
+                screensaverImageView.image = image
+            }
+        }}
+
+        override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+            super.init(style: style, reuseIdentifier: reuseIdentifier)
+            selectionStyle = .none
+            contentView.addSubview(screensaverImageView)
+            screensaverImageView.anchor(top: contentView.topAnchor,
+                                        left: contentView.layoutMarginsGuide.leftAnchor,
+                                        bottom: contentView.bottomAnchor,
+                                        right: contentView.layoutMarginsGuide.rightAnchor)
+            let ratioConstraint = screensaverImageView.heightAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: CGFloat(9)/16)
+            ratioConstraint.priority = .defaultHigh
+            ratioConstraint.isActive = true
+        }
+        
+        required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+
+        private lazy var screensaverImageView = UIImageView()
+    } // class Cell
+} // extension CabbageViewController
+
+
+final class CabbageViewController111: UIViewController {
 
     override func loadView() {
         view = UIScrollView()
@@ -90,4 +190,4 @@ final class CabbageViewController: UIViewController {
 
     private let avPlayerViewController = AVPlayerViewController()
     private var scrollView: UIScrollView { view as! UIScrollView }
-} // class CabbageViewController
+} // class CabbageViewController111
