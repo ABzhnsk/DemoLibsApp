@@ -27,7 +27,12 @@ class LibsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(CabbageViewController(), animated: true)
+        switch indexPath.row {
+            case 0: navigationController?.pushViewController(CabbageViewController(), animated: true)
+            case 1: navigationController?.pushViewController(PlayerDetailsViewController(), animated: true)
+            default:
+                navigationController?.pushViewController(CabbageViewController(), animated: true)
+        }
     }
 
     private let libsName = [
