@@ -1,4 +1,9 @@
 PODS:
+  - Cache (6.0.0)
+  - Imaginary (5.0.0):
+    - Cache (~> 6.0.0)
+  - Lightbox (2.5.0):
+    - Imaginary (~> 5.0.0)
   - NYTPhotoViewer (5.0.8):
     - NYTPhotoViewer/AnimatedGifSupport (= 5.0.8)
     - NYTPhotoViewer/Core (= 5.0.8)
@@ -62,6 +67,7 @@ PODS:
   - VFCabbage (0.5.1)
 
 DEPENDENCIES:
+  - Lightbox
   - NYTPhotoViewer
   - Player
   - SDWebImage
@@ -70,6 +76,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Cache
+    - Imaginary
+    - Lightbox
     - NYTPhotoViewer
     - PINCache
     - PINOperation
@@ -80,6 +89,9 @@ SPEC REPOS:
     - VFCabbage
 
 SPEC CHECKSUMS:
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+  Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
+  Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
   NYTPhotoViewer: 86a8fb34f82e468fd0d49c8de71cbe1fb45de2ae
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
@@ -89,6 +101,6 @@ SPEC CHECKSUMS:
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   VFCabbage: eb7c401e002e66a9f641590f274d9d5a6bfa85e2
 
-PODFILE CHECKSUM: ba89e14f418699d09d0f3f213490a68d50b1425e
+PODFILE CHECKSUM: 471c0425a923b5f56acbeef5e34136744e24a038
 
 COCOAPODS: 1.14.2

@@ -25,6 +25,7 @@ final class NYTPhotoViewerViewController: UITableViewController {
             image, _, _, _, _, url in
             guard let image, let url, url == imageURL else { return }
             self.image = image
+            self.tableView.reloadData()
         }
     }
 
@@ -33,7 +34,7 @@ final class NYTPhotoViewerViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Cell()
+        let cell = ImageCell()
         cell.image = image
         return cell
     }
@@ -66,33 +67,6 @@ extension NYTPhotoViewerViewController: NYTPhotoViewerDataSource {
 
 
 private extension NYTPhotoViewerViewController {
-
-    final class Cell: UITableViewCell {
-        var image: UIImage? { didSet {
-            pictureView.image = nil
-            if let image {
-                pictureView.image = image
-            }
-        }}
-
-        override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-            super.init(style: style, reuseIdentifier: reuseIdentifier)
-            selectionStyle = .none
-            pictureView.contentMode = .scaleAspectFill
-            pictureView.clipsToBounds = true
-            contentView.addSubview(pictureView)
-            pictureView.anchor(top: contentView.topAnchor,
-                               left: contentView.layoutMarginsGuide.leftAnchor,
-                               bottom: contentView.bottomAnchor,
-                               right: contentView.layoutMarginsGuide.rightAnchor)
-            pictureView.heightAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
-        }
-
-        required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
-
-        private lazy var pictureView = UIImageView()
-    } // class Cell
-
     /// NYTPhoto
     final class PhotoBox: NSObject, NYTPhoto {
         var image: UIImage?

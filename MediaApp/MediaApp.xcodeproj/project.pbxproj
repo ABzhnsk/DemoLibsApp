@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AD6034C75C788176B37F7634 /* Pods_MediaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE4091E087B9063535A3DEC /* Pods_MediaApp.framework */; };
+		B108FE0A2B66589E00861B86 /* LightboxPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */; };
+		B108FE112B6820C300861B86 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE102B6820C300861B86 /* ImageCell.swift */; };
 		B19890942B59577900C1F93F /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */; };
 		B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890952B5EB43500C1F93F /* CabbageViewController.swift */; };
 		B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */; };
-		B198909B2B63B6F100C1F93F /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198909A2B63B6F100C1F93F /* ImageCell.swift */; };
 		B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350B2B502870009E80A3 /* AppDelegate.swift */; };
 		B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350D2B502870009E80A3 /* SceneDelegate.swift */; };
 		B1F135102B502870009E80A3 /* LibsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350F2B502870009E80A3 /* LibsViewController.swift */; };
@@ -22,10 +23,11 @@
 /* Begin PBXFileReference section */
 		8AE4091E087B9063535A3DEC /* Pods_MediaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E553F92B1518216BB4F6E6 /* Pods-MediaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaApp.debug.xcconfig"; path = "Target Support Files/Pods-MediaApp/Pods-MediaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightboxPhotoViewController.swift; sourceTree = "<group>"; };
+		B108FE102B6820C300861B86 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		B19890952B5EB43500C1F93F /* CabbageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabbageViewController.swift; sourceTree = "<group>"; };
 		B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTPhotoViewController.swift; sourceTree = "<group>"; };
-		B198909A2B63B6F100C1F93F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B1F135082B502870009E80A3 /* MediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1350B2B502870009E80A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F1350D2B502870009E80A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				B19890952B5EB43500C1F93F /* CabbageViewController.swift */,
 				B1F1350F2B502870009E80A3 /* LibsViewController.swift */,
+				B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */,
 				B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */,
 				B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */,
 			);
@@ -91,7 +94,7 @@
 			children = (
 				B1F1350B2B502870009E80A3 /* AppDelegate.swift */,
 				B1F1350D2B502870009E80A3 /* SceneDelegate.swift */,
-				B198909A2B63B6F100C1F93F /* ImageCell.swift */,
+				B108FE102B6820C300861B86 /* ImageCell.swift */,
 				B19890992B63B6C800C1F93F /* ViewControllers */,
 				B1F135142B502872009E80A3 /* Assets.xcassets */,
 				B1F135162B502872009E80A3 /* LaunchScreen.storyboard */,
@@ -223,10 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F135102B502870009E80A3 /* LibsViewController.swift in Sources */,
-				B198909B2B63B6F100C1F93F /* ImageCell.swift in Sources */,
+				B108FE0A2B66589E00861B86 /* LightboxPhotoViewController.swift in Sources */,
 				B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */,
 				B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */,
 				B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */,
+				B108FE112B6820C300861B86 /* ImageCell.swift in Sources */,
 				B19890942B59577900C1F93F /* PlayerDetailsViewController.swift in Sources */,
 				B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */,
 			);

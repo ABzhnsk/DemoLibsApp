@@ -31,6 +31,7 @@ class LibsViewController: UITableViewController {
             case 0: navigationController?.pushViewController(CabbageViewController(), animated: true)
             case 1: navigationController?.pushViewController(PlayerDetailsViewController(), animated: true)
             case 2: navigationController?.pushViewController(NYTPhotoViewerViewController(), animated: true)
+            case 3: navigationController?.pushViewController(LightboxPhotoViewController(), animated: true)
             default:
                 navigationController?.pushViewController(CabbageViewController(), animated: true)
         }
