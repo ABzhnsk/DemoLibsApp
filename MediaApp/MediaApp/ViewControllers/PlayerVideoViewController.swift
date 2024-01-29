@@ -1,22 +1,23 @@
 //
-//  PlayerDetailsViewController.swift
+//  PlayerVideoViewController.swift
 //  MediaApp
 //
 //  Created by Anna Buzhinskaya on 18.01.2024.
 //
+
 
 import UIKit
 import Player
 import SwifterSwift
 
 
-final class PlayerDetailsViewController: UIViewController {
+// TODO: it is displayed differently from others, make better
+final class PlayerVideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
 
-        // TODO: it is loaded every time the controller is opened
         player.url = URL(string: "https://v3.cdnpk.net/videvo_files/video/free/2019-11/large_preview/190301_1_25_11.mp4")
 
         // Gesture recognizer

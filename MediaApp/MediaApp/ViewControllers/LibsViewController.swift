@@ -28,13 +28,13 @@ class LibsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-            case 0: navigationController?.pushViewController(CabbageViewController(), animated: true)
-            case 1: navigationController?.pushViewController(PlayerDetailsViewController(), animated: true)
+            case 0: navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
+            case 1: navigationController?.pushViewController(PlayerVideoViewController(), animated: true)
             case 2: navigationController?.pushViewController(NYTPhotoViewerViewController(), animated: true)
             case 3: navigationController?.pushViewController(LightboxPhotoViewController(), animated: true)
             case 4: navigationController?.pushViewController(LightboxVideoViewController(), animated: true)
             default:
-                navigationController?.pushViewController(CabbageViewController(), animated: true)
+                navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
         }
     }
 

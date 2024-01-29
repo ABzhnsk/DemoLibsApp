@@ -21,6 +21,8 @@ final class NYTPhotoViewerViewController: UITableViewController {
 
         let imageURL = URL(string: "https://cataas.com/cat")!
 
+        // Use SDWebImage to get image from URL
+
         SDWebImageManager.shared.loadImage(with: imageURL, progress: nil) { 
             image, _, _, _, _, url in
             guard let image, let url, url == imageURL else { return }
@@ -40,14 +42,17 @@ final class NYTPhotoViewerViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 1. Create NYTPhotosViewController
         let nytPhotosViewController = NYTPhotosViewController(dataSource: self)
-        self.present(nytPhotosViewController, animated: true)
+        // 2. Show controller
+        present(nytPhotosViewController, animated: true)
     }
 
     private var image: UIImage?
 } // class NYTPhotoViewerViewController
 
 
+// NYTPhotoViewerDataSource
 extension NYTPhotoViewerViewController: NYTPhotoViewerDataSource {
     var numberOfPhotos: NSNumber? {
         1
@@ -58,8 +63,11 @@ extension NYTPhotoViewerViewController: NYTPhotoViewerDataSource {
     }
     
     func photo(at photoIndex: Int) -> NYTPhoto? {
+        // 1. Create NYTPhoto
         let photoBox = PhotoBox()
+        // 2. Setup image
         photoBox.image = image
+        // 3. Setup placeholder
         photoBox.placeholderImage = UIImage(systemName: "camera")
         return photoBox
     }

@@ -21,6 +21,8 @@ final class LightboxPhotoViewController: UITableViewController {
 
         let imageURL = URL(string: "https://cataas.com/cat")!
 
+        // Use SDWebImage to get image from URL
+
         SDWebImageManager.shared.loadImage(with: imageURL, progress: nil) {
             image, _, _, _, _, url in
             guard let image, let url, url == imageURL else { return }
@@ -41,7 +43,7 @@ final class LightboxPhotoViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 1. Create LightboxController with LightboxImage
-        let controller = LightboxController(images: [LightboxImage(image: image!)])
+        let controller = LightboxController(images: [LightboxImage(image: image!)]) // TODO: remove force unwrapping
         // 2. Use dynamic background, otherwise, the screen will be displayed incorrectly
         controller.dynamicBackground = true
         // 3. Show controller

@@ -25,6 +25,7 @@ final class PreviewVideoCell: UITableViewCell {
                                     left: contentView.layoutMarginsGuide.leftAnchor,
                                     bottom: contentView.bottomAnchor,
                                     right: contentView.layoutMarginsGuide.rightAnchor)
+        // Make  the size like the video
         let ratioConstraint = previewImageView.heightAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: CGFloat(9)/16)
         ratioConstraint.priority = .defaultHigh
         ratioConstraint.isActive = true
