@@ -10,6 +10,8 @@
 		AD6034C75C788176B37F7634 /* Pods_MediaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE4091E087B9063535A3DEC /* Pods_MediaApp.framework */; };
 		B108FE0A2B66589E00861B86 /* LightboxPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */; };
 		B108FE112B6820C300861B86 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE102B6820C300861B86 /* ImageCell.swift */; };
+		B108FE132B6822AB00861B86 /* LightboxVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */; };
+		B108FE152B68281C00861B86 /* PreviewVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE142B68281C00861B86 /* PreviewVideoCell.swift */; };
 		B19890942B59577900C1F93F /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */; };
 		B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890952B5EB43500C1F93F /* CabbageViewController.swift */; };
 		B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */; };
@@ -25,6 +27,8 @@
 		A5E553F92B1518216BB4F6E6 /* Pods-MediaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaApp.debug.xcconfig"; path = "Target Support Files/Pods-MediaApp/Pods-MediaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightboxPhotoViewController.swift; sourceTree = "<group>"; };
 		B108FE102B6820C300861B86 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightboxVideoViewController.swift; sourceTree = "<group>"; };
+		B108FE142B68281C00861B86 /* PreviewVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVideoCell.swift; sourceTree = "<group>"; };
 		B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		B19890952B5EB43500C1F93F /* CabbageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabbageViewController.swift; sourceTree = "<group>"; };
 		B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTPhotoViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				B19890952B5EB43500C1F93F /* CabbageViewController.swift */,
 				B1F1350F2B502870009E80A3 /* LibsViewController.swift */,
 				B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */,
+				B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */,
 				B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */,
 				B19890932B59577900C1F93F /* PlayerDetailsViewController.swift */,
 			);
@@ -95,6 +100,7 @@
 				B1F1350B2B502870009E80A3 /* AppDelegate.swift */,
 				B1F1350D2B502870009E80A3 /* SceneDelegate.swift */,
 				B108FE102B6820C300861B86 /* ImageCell.swift */,
+				B108FE142B68281C00861B86 /* PreviewVideoCell.swift */,
 				B19890992B63B6C800C1F93F /* ViewControllers */,
 				B1F135142B502872009E80A3 /* Assets.xcassets */,
 				B1F135162B502872009E80A3 /* LaunchScreen.storyboard */,
@@ -225,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B108FE152B68281C00861B86 /* PreviewVideoCell.swift in Sources */,
+				B108FE132B6822AB00861B86 /* LightboxVideoViewController.swift in Sources */,
 				B1F135102B502870009E80A3 /* LibsViewController.swift in Sources */,
 				B108FE0A2B66589E00861B86 /* LightboxPhotoViewController.swift in Sources */,
 				B19890962B5EB43500C1F93F /* CabbageViewController.swift in Sources */,
