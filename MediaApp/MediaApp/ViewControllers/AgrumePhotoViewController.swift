@@ -18,7 +18,6 @@ final class AgrumePhotoViewController: UITableViewController {
 
         view.backgroundColor = .systemBackground
         tableView.separatorStyle = .none
-        title = "Agrume"
 
         let imageURL = URL(string: "https://cataas.com/cat")!
 

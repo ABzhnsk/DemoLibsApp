@@ -28,12 +28,30 @@ class LibsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-            case 0: navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
-            case 1: navigationController?.pushViewController(PlayerVideoViewController(), animated: true)
-            case 2: navigationController?.pushViewController(NYTPhotoViewerViewController(), animated: true)
-            case 3: navigationController?.pushViewController(LightboxPhotoViewController(), animated: true)
-            case 4: navigationController?.pushViewController(LightboxVideoViewController(), animated: true)
-            case 5: navigationController?.pushViewController(AgrumePhotoViewController(), animated: true)
+            case 0: 
+                let cabbageVideoViewController = CabbageVideoViewController()
+                cabbageVideoViewController.title = libsName[0]
+                navigationController?.pushViewController(cabbageVideoViewController, animated: true)
+            case 1:
+                let playerVideoViewController = PlayerVideoViewController()
+                playerVideoViewController.title = libsName[1]
+                navigationController?.pushViewController(playerVideoViewController, animated: true)
+            case 2:
+                let nytPhotoViewerViewController = NYTPhotoViewerViewController()
+                nytPhotoViewerViewController.title = libsName[2]
+                navigationController?.pushViewController(nytPhotoViewerViewController, animated: true)
+            case 3:
+                let lightboxPhotoViewController = LightboxPhotoViewController()
+                lightboxPhotoViewController.title = libsName[3]
+                navigationController?.pushViewController(lightboxPhotoViewController, animated: true)
+            case 4:
+                let lightboxVideoViewController = LightboxVideoViewController()
+                lightboxVideoViewController.title = libsName[4]
+                navigationController?.pushViewController(lightboxVideoViewController, animated: true)
+            case 5:
+                let agrumePhotoViewController = AgrumePhotoViewController()
+                agrumePhotoViewController.title = libsName[5]
+                navigationController?.pushViewController(agrumePhotoViewController, animated: true)
             default:
                 navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
         }

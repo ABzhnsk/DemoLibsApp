@@ -45,6 +45,7 @@ final class LightboxPhotoViewController: UITableViewController {
         // 1. Create LightboxController with LightboxImage
         let controller = LightboxController(images: [LightboxImage(image: image!)]) // TODO: remove force unwrapping
         // 2. Use dynamic background, otherwise, the screen will be displayed incorrectly
+        // dynamic background with blur effect and don't know how change it
         controller.dynamicBackground = true
         // 3. Show controller
         present(controller, animated: true)
