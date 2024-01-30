@@ -33,6 +33,7 @@ class LibsViewController: UITableViewController {
             case 2: navigationController?.pushViewController(NYTPhotoViewerViewController(), animated: true)
             case 3: navigationController?.pushViewController(LightboxPhotoViewController(), animated: true)
             case 4: navigationController?.pushViewController(LightboxVideoViewController(), animated: true)
+            case 5: navigationController?.pushViewController(AgrumePhotoViewController(), animated: true)
             default:
                 navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
         }
@@ -44,6 +45,7 @@ class LibsViewController: UITableViewController {
         "NYTPhotoViewer - photo",
         "Lightbox - photo",
         "Lightbox - video",
+        "Agrume - photo"
     ]
 
 } // class LibsViewController

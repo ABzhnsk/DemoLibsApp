@@ -6,6 +6,7 @@ target 'MediaApp' do
   use_frameworks!
 
   # Pods for MediaApp
+  pod "Agrume"
   pod 'Lightbox'
   pod 'NYTPhotoViewer'
   pod 'Player'

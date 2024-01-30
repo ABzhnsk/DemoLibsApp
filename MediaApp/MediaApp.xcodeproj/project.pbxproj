@@ -12,6 +12,7 @@
 		B108FE112B6820C300861B86 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE102B6820C300861B86 /* ImageCell.swift */; };
 		B108FE132B6822AB00861B86 /* LightboxVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */; };
 		B108FE152B68281C00861B86 /* PreviewVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE142B68281C00861B86 /* PreviewVideoCell.swift */; };
+		B108FE1F2B693C0700861B86 /* AgrumePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE1E2B693C0700861B86 /* AgrumePhotoViewController.swift */; };
 		B19890942B59577900C1F93F /* PlayerVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890932B59577900C1F93F /* PlayerVideoViewController.swift */; };
 		B19890962B5EB43500C1F93F /* CabbageVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890952B5EB43500C1F93F /* CabbageVideoViewController.swift */; };
 		B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */; };
@@ -29,6 +30,7 @@
 		B108FE102B6820C300861B86 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightboxVideoViewController.swift; sourceTree = "<group>"; };
 		B108FE142B68281C00861B86 /* PreviewVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVideoCell.swift; sourceTree = "<group>"; };
+		B108FE1E2B693C0700861B86 /* AgrumePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgrumePhotoViewController.swift; sourceTree = "<group>"; };
 		B19890932B59577900C1F93F /* PlayerVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVideoViewController.swift; sourceTree = "<group>"; };
 		B19890952B5EB43500C1F93F /* CabbageVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabbageVideoViewController.swift; sourceTree = "<group>"; };
 		B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTPhotoViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		B19890992B63B6C800C1F93F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B108FE1E2B693C0700861B86 /* AgrumePhotoViewController.swift */,
 				B19890952B5EB43500C1F93F /* CabbageVideoViewController.swift */,
 				B1F1350F2B502870009E80A3 /* LibsViewController.swift */,
 				B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */,
@@ -241,6 +244,7 @@
 				B108FE112B6820C300861B86 /* ImageCell.swift in Sources */,
 				B19890942B59577900C1F93F /* PlayerVideoViewController.swift in Sources */,
 				B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */,
+				B108FE1F2B693C0700861B86 /* AgrumePhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

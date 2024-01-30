@@ -1,4 +1,6 @@
 PODS:
+  - Agrume (5.8.7):
+    - SwiftyGif
   - Cache (6.0.0)
   - Imaginary (5.0.0):
     - Cache (~> 6.0.0)
@@ -64,9 +66,11 @@ PODS:
   - SwifterSwift/SwiftStdlib (6.0.0)
   - SwifterSwift/UIKit (6.0.0)
   - SwifterSwift/WebKit (6.0.0)
+  - SwiftyGif (5.4.4)
   - VFCabbage (0.5.1)
 
 DEPENDENCIES:
+  - Agrume
   - Lightbox
   - NYTPhotoViewer
   - Player
@@ -76,6 +80,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Agrume
     - Cache
     - Imaginary
     - Lightbox
@@ -86,9 +91,11 @@ SPEC REPOS:
     - Player
     - SDWebImage
     - SwifterSwift
+    - SwiftyGif
     - VFCabbage
 
 SPEC CHECKSUMS:
+  Agrume: f857f2d7375e894e5d6b49d504b073fbe0aedd9f
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
   Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
@@ -99,8 +106,9 @@ SPEC CHECKSUMS:
   Player: 37e0acc16ea1495fc241df88fe9f089367513331
   SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   VFCabbage: eb7c401e002e66a9f641590f274d9d5a6bfa85e2
 
-PODFILE CHECKSUM: 007ba4521b4cca55fba689355fa01a248ac4aa69
+PODFILE CHECKSUM: 8b2f67e08edeaca6aa29d77288935d036bba5f3e
 
 COCOAPODS: 1.14.2
