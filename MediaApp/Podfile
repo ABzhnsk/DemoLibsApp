@@ -6,10 +6,21 @@ target 'MediaApp' do
   use_frameworks!
 
   # Pods for MediaApp
+  pod 'ImageViewer'
   pod 'Lightbox'
   pod 'NYTPhotoViewer'
   pod 'Player'
   pod 'SDWebImage'
   pod 'SwifterSwift'
   pod 'VFCabbage' 
+end
+
+post_install do |installer|
+    installer.generated_projects.each do |project|
+        project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+            end
+        end
+    end
 end
