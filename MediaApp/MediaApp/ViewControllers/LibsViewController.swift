@@ -44,8 +44,6 @@ class LibsViewController: UITableViewController {
         "NYTPhotoViewer - photo",
         "Lightbox - photo",
         "Lightbox - video",
-        "ImageViewer - photo",
-        "ImageViewer - video",
     ]
 
 } // class LibsViewController
