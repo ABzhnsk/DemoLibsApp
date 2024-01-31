@@ -33,24 +33,20 @@ class LibsViewController: UITableViewController {
                 cabbageVideoViewController.title = libsName[0]
                 navigationController?.pushViewController(cabbageVideoViewController, animated: true)
             case 1:
-                let playerVideoViewController = PlayerVideoViewController()
-                playerVideoViewController.title = libsName[1]
-                navigationController?.pushViewController(playerVideoViewController, animated: true)
-            case 2:
                 let nytPhotoViewerViewController = NYTPhotoViewerViewController()
-                nytPhotoViewerViewController.title = libsName[2]
+                nytPhotoViewerViewController.title = libsName[1]
                 navigationController?.pushViewController(nytPhotoViewerViewController, animated: true)
-            case 3:
+            case 2:
                 let lightboxPhotoViewController = LightboxPhotoViewController()
-                lightboxPhotoViewController.title = libsName[3]
+                lightboxPhotoViewController.title = libsName[2]
                 navigationController?.pushViewController(lightboxPhotoViewController, animated: true)
-            case 4:
+            case 3:
                 let lightboxVideoViewController = LightboxVideoViewController()
-                lightboxVideoViewController.title = libsName[4]
+                lightboxVideoViewController.title = libsName[3]
                 navigationController?.pushViewController(lightboxVideoViewController, animated: true)
-            case 5:
+            case 4:
                 let agrumePhotoViewController = AgrumePhotoViewController()
-                agrumePhotoViewController.title = libsName[5]
+                agrumePhotoViewController.title = libsName[4]
                 navigationController?.pushViewController(agrumePhotoViewController, animated: true)
             default:
                 navigationController?.pushViewController(CabbageVideoViewController(), animated: true)
@@ -59,7 +55,6 @@ class LibsViewController: UITableViewController {
 
     private let libsName = [
         "Cabbage - video",
-        "Player - video",
         "NYTPhotoViewer - photo",
         "Lightbox - photo",
         "Lightbox - video",

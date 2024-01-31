@@ -13,7 +13,6 @@
 		B108FE132B6822AB00861B86 /* LightboxVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */; };
 		B108FE152B68281C00861B86 /* PreviewVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE142B68281C00861B86 /* PreviewVideoCell.swift */; };
 		B108FE1F2B693C0700861B86 /* AgrumePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108FE1E2B693C0700861B86 /* AgrumePhotoViewController.swift */; };
-		B19890942B59577900C1F93F /* PlayerVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890932B59577900C1F93F /* PlayerVideoViewController.swift */; };
 		B19890962B5EB43500C1F93F /* CabbageVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890952B5EB43500C1F93F /* CabbageVideoViewController.swift */; };
 		B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */; };
 		B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1350B2B502870009E80A3 /* AppDelegate.swift */; };
@@ -31,7 +30,6 @@
 		B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightboxVideoViewController.swift; sourceTree = "<group>"; };
 		B108FE142B68281C00861B86 /* PreviewVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVideoCell.swift; sourceTree = "<group>"; };
 		B108FE1E2B693C0700861B86 /* AgrumePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgrumePhotoViewController.swift; sourceTree = "<group>"; };
-		B19890932B59577900C1F93F /* PlayerVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVideoViewController.swift; sourceTree = "<group>"; };
 		B19890952B5EB43500C1F93F /* CabbageVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabbageVideoViewController.swift; sourceTree = "<group>"; };
 		B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTPhotoViewController.swift; sourceTree = "<group>"; };
 		B1F135082B502870009E80A3 /* MediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +72,6 @@
 				B108FE092B66589E00861B86 /* LightboxPhotoViewController.swift */,
 				B108FE122B6822AB00861B86 /* LightboxVideoViewController.swift */,
 				B19890972B63A12500C1F93F /* NYTPhotoViewController.swift */,
-				B19890932B59577900C1F93F /* PlayerVideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 				B1F1350C2B502870009E80A3 /* AppDelegate.swift in Sources */,
 				B19890982B63A12500C1F93F /* NYTPhotoViewController.swift in Sources */,
 				B108FE112B6820C300861B86 /* ImageCell.swift in Sources */,
-				B19890942B59577900C1F93F /* PlayerVideoViewController.swift in Sources */,
 				B1F1350E2B502870009E80A3 /* SceneDelegate.swift in Sources */,
 				B108FE1F2B693C0700861B86 /* AgrumePhotoViewController.swift in Sources */,
 			);

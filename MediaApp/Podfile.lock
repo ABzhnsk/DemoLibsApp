@@ -29,7 +29,6 @@ PODS:
   - PINRemoteImage/PINCache (3.0.3):
     - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
-  - Player (0.14.0)
   - SDWebImage (5.18.5):
     - SDWebImage/Core (= 5.18.5)
   - SDWebImage/Core (5.18.5)
@@ -73,7 +72,6 @@ DEPENDENCIES:
   - Agrume
   - Lightbox
   - NYTPhotoViewer
-  - Player
   - SDWebImage
   - SwifterSwift
   - VFCabbage
@@ -88,7 +86,6 @@ SPEC REPOS:
     - PINCache
     - PINOperation
     - PINRemoteImage
-    - Player
     - SDWebImage
     - SwifterSwift
     - SwiftyGif
@@ -103,12 +100,11 @@ SPEC CHECKSUMS:
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
-  Player: 37e0acc16ea1495fc241df88fe9f089367513331
   SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   VFCabbage: eb7c401e002e66a9f641590f274d9d5a6bfa85e2
 
-PODFILE CHECKSUM: 8b2f67e08edeaca6aa29d77288935d036bba5f3e
+PODFILE CHECKSUM: 8ea05c7ca03c8dc2c9637ab1d01c9de7b0277c14
 
 COCOAPODS: 1.14.2

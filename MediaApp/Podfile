@@ -9,7 +9,6 @@ target 'MediaApp' do
   pod "Agrume"
   pod 'Lightbox'
   pod 'NYTPhotoViewer'
-  pod 'Player'
   pod 'SDWebImage'
   pod 'SwifterSwift'
   pod 'VFCabbage' 
